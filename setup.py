@@ -20,8 +20,8 @@ setup(
     author='Elliot Ford, Emma Flint',
     author_email='elliot.ford@hotmail.co.uk',
     license="GPL",
-    url='https://github.com/EFord36/normalise',
-    download_url='https://github.com/EFord36/normalise/tarball/0.1.9',
+    url='https://github.com/bennkael/normaliseNSC',
+    download_url='',
     keywords=['normalisation', 'text', 'pre-processing'],
     classifiers=[
         "Natural Language :: English",
