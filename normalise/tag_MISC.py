@@ -58,7 +58,12 @@ urlend_pattern = re.compile('''
 \.                      # '.'
 ((com)|                 # 'com' OR
 (org(\.uk)?)|           # 'org' followed optionally by '.uk' OR
-(co\.uk))               # 'co.uk'
+(co\.uk)|               # 'co.uk'
+(edu)|
+(ca)|
+(gov)|
+(ly)|
+(net))
 $                       #end of string
 ''', re.VERBOSE | re.IGNORECASE)
 
