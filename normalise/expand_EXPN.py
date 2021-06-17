@@ -372,11 +372,10 @@ def tag_matches(i, text):
 
 def find_last_letter(w):
     """Find last alphabetic character in a word."""
-    if w:
-        if w[-1].isalpha():
-            return w[-1]
-        else:
-            return find_last_letter(w[:-1])
+    if w[-1].isalpha():
+        return w[-1]
+    else:
+        return find_last_letter(w[:-1])
 
 
 def gen_candidates(word):
@@ -398,7 +397,7 @@ def gen_candidates(word):
             reg_start += lt
     regex_start = re.compile(reg_start)
     last = find_last_letter(word)
-    if last == 's':
+    if last == 's' and word[0] != last:
         last = find_last_letter(word[:word.rfind(last)]) + last
     for lt in word[:word.rfind(last)].lower():
         if lt.isalpha():
