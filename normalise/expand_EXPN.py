@@ -372,10 +372,11 @@ def tag_matches(i, text):
 
 def find_last_letter(w):
     """Find last alphabetic character in a word."""
-    if w[-1].isalpha():
-        return w[-1]
-    else:
-        return find_last_letter(w[:-1])
+    if w:
+        if w[-1].isalpha():
+            return w[-1]
+        else:
+            return find_last_letter(w[:-1])
 
 
 def gen_candidates(word):
