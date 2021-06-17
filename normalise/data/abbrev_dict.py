@@ -135,6 +135,7 @@ abbrev_dict = {
                "hosp.": "hospital",
                "husb.": "husband",
                "inc.": "incorporated",
+               "inc": "incorporated",
                "ind.": "industry",
                "indef.": "indefinite",
                "inq.": "inquiry",
